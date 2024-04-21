@@ -7,11 +7,6 @@ import DialogTitle from "@mui/material/DialogTitle";
 import { Button } from "./styled/button.styled";
 import { useDialog } from "../Providers/ProvideDialog";
 
-interface IActions {
-  open: boolean;
-  handleOpen: () => void;
-  handleClose: () => void;
-}
 
 export const Dialog = () => {
   const { open, closeDialog } = useDialog();
