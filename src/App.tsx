@@ -1,9 +1,13 @@
 import "./App.css";
 import Background from "./components/Background";
-import Player from "./components/Player";
+import Menu from "./components/Menu";
 
 function App() {
-  return <Background>hhhh</Background>;
+  return (
+    <Background>
+      <Menu />
+    </Background>
+  );
 }
 
 export default App;

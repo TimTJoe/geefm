@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { BoxProps, Box } from "@mui/material";
-import { Keyframes, keyframes } from "@emotion/react";
+import { keyframes } from "@emotion/react";
 
 export const BackgroundStyled = styled(Box)<BoxProps>`
   width: 100%;

@@ -6,7 +6,7 @@ import {
 } from "./styled/background.styled";
 
 type TBackground = {
-  children: React.JSX.Element | string;
+  children: React.JSX.Element | any;
 };
 
 const Background = ({ children }: TBackground): React.JSX.Element => {
