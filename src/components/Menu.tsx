@@ -7,7 +7,7 @@ import Dialog from "./Dialog";
 const Menu = () => {
   const {openDialog} = useDialog()
   return (
-    <MenuBar elevation={0}>
+    <MenuBar elevation={0} position="static">
       <Toolbar>
         <Typography variant="h6" component="div" color={"primary"}>
           <Image src={logoRound} />
