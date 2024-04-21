@@ -3,11 +3,14 @@ import "./App.css";
 import Background from "./components/Background";
 import Menu from "./components/Menu";
 import styled from "@emotion/styled";
+import Controls from "./components/Controls";
 
 const Main = styled(Container)`
-  background: rgba(255, 255, 255, 0.589);
+  background: rgba(214, 209, 209, 0.589);
   backdrop-filter: blur(40px);
-  min-height: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
 `;
 
 function App() {
@@ -15,13 +18,7 @@ function App() {
     <Background>
       <Menu />
       <Main maxWidth="md">
-        logding Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Excepturi officiis, beatae ullam tempore veniam labore ab voluptatem,
-        quo sunt assumenda iusto id eius culpa placeat debitis nostrum! Quam,
-        animi nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Voluptates, in voluptatem eos dolores quisquam quos saepe magni ullam
-        itaque, corporis, debitis nobis et perspiciatis consequuntur at deleniti
-        dicta tenetur quis.
+        <Controls />
       </Main>
     </Background>
   );
