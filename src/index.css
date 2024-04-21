@@ -9,5 +9,13 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --blue: #0554F2;
+  --dark-blue: #03318C;
+  --green: #0DF205;
+  --dark-green: rgb(13, 140, 8);
+  --yellow: #EAF205;
+  --lite-gray: #F2F2F2;
+  --black: #010D00;
 }
 

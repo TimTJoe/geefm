@@ -1,15 +1,9 @@
 import "./App.css";
-import ReactPlayer from "react-player";
-const url =
-  "https://stream-173.zeno.fm/cqqzg1637reuv";
+import Background from "./components/Background";
+import Player from "./components/Player";
+
 function App() {
-  return (
-    <>
-      <h4>Hello Gee FM 104.7</h4>
-      <hr />
-      <ReactPlayer url={url} controls />
-    </>
-  );
+  return <Background>hhhh</Background>;
 }
 
 export default App;
