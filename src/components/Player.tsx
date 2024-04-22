@@ -28,8 +28,6 @@ const Container = styled(MuiBox)`
 
 const PauseButton = styled(IconButton)``;
 const PlayButton = styled(IconButton)``;
-const VolUp = styled(IconButton)``;
-const VolDown = styled(IconButton)``;
 
 const Player = () => {
   const [playing, setPlaying] = useState<boolean>(true);
@@ -42,7 +40,7 @@ const Player = () => {
     setPlaying(!playing);
   };
 
-  const handleVolume = (event: Event, newValue: number | number[]) => {
+  const handleVolume = (_event: Event, newValue: number | number[]) => {
     setState({ ...state, volume: newValue as number });
   };
 
