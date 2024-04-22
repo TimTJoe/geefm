@@ -5,7 +5,7 @@ import { useDialog } from "../Providers/ProvideDialog";
 import Dialog from "./Dialog";
 
 const Menu = () => {
-  const {openDialog} = useDialog()
+  const { openDialog } = useDialog();
   return (
     <MenuBar elevation={0} position="static">
       <Toolbar>

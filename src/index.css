@@ -3,19 +3,35 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
   --blue: #0554F2;
   --dark-blue: #03318C;
-  --green: #0DF205;
-  --dark-green: rgb(13, 140, 8);
+  --green: #099b7e;
+  --dark-green: #0d8c08;
   --yellow: #EAF205;
   --lite-gray: #F2F2F2;
   --black: #010D00;
+
+  background-image: url("./assets/logo_lg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+:root::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(90px);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+
 }
 
