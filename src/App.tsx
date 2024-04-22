@@ -1,12 +1,15 @@
-import Menu from "./components/Menu";
-import Player from "./components/Player";
+import Container from "./components/Container";
+import Controls from "./components/Controls";
+import Media from "./components/Media";
+import Visualiser from "./components/Visualiser";
 
 function App() {
   return (
-    <>
-      <Menu />
-      <Player />
-    </>
+    <Container>
+      <Media />
+      <Visualiser />
+      <Controls />
+    </Container>
   );
 }
 
