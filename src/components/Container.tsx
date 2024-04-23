@@ -15,7 +15,7 @@ interface IContainer {
 }
 
 const Container: React.FC<IContainer> = ({ children }) => {
-  return <Wrapper maxWidth="md" spacing={2}>{children}</Wrapper>;
+  return <Wrapper maxWidth="sm" spacing={2}>{children}</Wrapper>;
 };
 
 export default Container;

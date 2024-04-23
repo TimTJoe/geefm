@@ -1,7 +1,7 @@
 import { Toolbar, Typography } from "@mui/material";
 import { Button, Image, MenuBar } from "./styled/Menu.styled";
 import logoRound from "@assets/logo_round.png";
-import { useDialog } from "../Providers/ProvideDialog";
+import { useDialog } from "../providers/ProvideDialog";
 import Dialog from "./Dialog";
 
 const Menu = () => {

@@ -1,6 +1,8 @@
 import { styled, useTheme } from "@mui/material/styles";
 import { Box, Slider, Typography } from "@mui/material";
 import React from "react";
+import { usePlayer } from "@provider/ProvidePlayer";
+
 
 const Container = styled(Box)``;
 
@@ -14,23 +16,28 @@ const TinyText = styled(Typography)({
 
 const Duration = () => {
     const theme = useTheme();
-    const duration = 200; // seconds
+    const max = 200; // seconds
     const [position, setPosition] = React.useState(32);
 
     function formatDuration(value: number) {
       const minute = Math.floor(value / 60);
       const secondLeft = value - minute * 60;
       return `${minute}:${secondLeft < 10 ? `0${secondLeft}` : secondLeft}`;
-    }
+  }
+  const {progress} = usePlayer()
+  
+
+
+  
     return (
       <Container>
         <Slider
           aria-label="time-indicator"
           size="small"
-          value={position}
+          value={progress}
           min={0}
           step={1}
-          max={duration}
+          max={max}
           onChange={(_, value) => setPosition(value as number)}
           sx={{
             color: theme.palette.mode === "dark" ? "#fff" : "rgba(0,0,0,0.87)",
@@ -68,7 +75,7 @@ const Duration = () => {
           }}
         >
           <TinyText>{formatDuration(position)}</TinyText>
-          <TinyText>-{formatDuration(duration - position)}</TinyText>
+          <TinyText>-{formatDuration(max - position)}</TinyText>
         </Box>
       </Container>
     );

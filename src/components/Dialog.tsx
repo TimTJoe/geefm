@@ -5,8 +5,7 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import { Button } from "./styled/button.styled";
-import { useDialog } from "../Providers/ProvideDialog";
-
+import { useDialog } from "../providers/ProvideDialog";
 
 export const Dialog = () => {
   const { open, closeDialog } = useDialog();
